@@ -3,9 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 const whiteColor = Color(0xffFFFFFF);
 const blackColor = Color(0xff000000);
+const greyColor = Colors.grey;
 
 TextStyle whiteTextStyle = GoogleFonts.inter(color: whiteColor);
 TextStyle blackTextStyle = GoogleFonts.inter(color: blackColor);
+TextStyle greyTextStyle = GoogleFonts.inter(color: greyColor);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;

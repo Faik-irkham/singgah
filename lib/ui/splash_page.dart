@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:singgah/shared/theme.dart';
+import 'package:singgah/ui/login_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const LoginPage(),
+          ),
+        );
+      },
+    );
+
     return Scaffold(
       body: Center(
         child: Row(
